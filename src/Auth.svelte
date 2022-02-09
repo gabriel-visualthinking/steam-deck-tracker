@@ -55,7 +55,7 @@
     <div class="col-6 form-widget">
       <h1 class="header">Supabase + Svelte</h1>
       <Radio options={radioOptions} fontSize={16} bind:userSelected={signUp}/>
-      <p class="description">Sign in via magic link with your email below</p>
+      <p class="description">V 1.0</p>
       <div>
         <div>
             <input
