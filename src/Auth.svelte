@@ -38,10 +38,10 @@
             loading = true
             const { user, session, error } = await supabase.auth.signUp({
                 email: email,
-                password: password,
-            })
+                password: password
+            },{redirectTo: window.location.href})
             if (error) throw error
-            alert("Please verify your email addressnow, before trying to log in...")
+            alert("Please verify your email address now, before trying to log in...")
         } catch (error) {
             alert(error.error_description || error.message)
         } finally {
